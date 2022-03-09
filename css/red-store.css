@@ -249,6 +249,8 @@ footer span:last-of-type {
 /* -------- End header Section --------*/
 /* ------- Start Landing Section ------*/
 .landing {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
   height: 100vh;
   background: radial-gradient(#fff, #ffd6d6);
 }
