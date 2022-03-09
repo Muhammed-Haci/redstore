@@ -251,7 +251,7 @@ footer span:last-of-type {
 .landing {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
-  height: 100vh;
+  height: calc(100vh - 60px);
   background: radial-gradient(#fff, #ffd6d6);
 }
 .landing .container {
