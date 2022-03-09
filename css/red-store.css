@@ -391,13 +391,12 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s;
-  transition-delay: 1s;
 }
 .features figure figcaption::before {
   content: "";
   position: absolute;
   width: 0;
-  height: calc(100% - 38px);
+  height: calc(100% - 37px);
   left: 0;
   top: 0;
   z-index: -1;
