@@ -165,7 +165,7 @@ header .container nav {
 header .container nav ul {
   display: none;
   position: absolute;
-  top: 101%;
+  top: calc(100% + 2px);
   left: 0;
   width: 100%;
 }
