@@ -282,6 +282,44 @@ footer {
 }
 
 /* -------- End Landing Section -------*/
+/* ----- Start categories Section -----*/
+.categories {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+.categories .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.categories .container .img-holder {
+  position: relative;
+  transition: 1s;
+  overflow: hidden;
+  box-shadow: 0 10px 10px #ddd;
+  border-radius: 5px;
+}
+.categories .container .img-holder::before, .categories .container .img-holder::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  transition: 1s;
+  background-color: red;
+}
+.categories .container .img-holder::before {
+  top: 0;
+  left: 0;
+}
+.categories .container .img-holder::after {
+  bottom: 0;
+  right: 0;
+}
+.categories .container .img-holder:hover::before, .categories .container .img-holder:hover::after {
+  height: 100%;
+}
+
+/* ------ End categories Section ------*/
 /* ------- Start Features section -----*/
 /* ------- Start Footer section -------*/
 /* -------- End Footer section --------*/
