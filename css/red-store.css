@@ -234,7 +234,7 @@ header .container nav .toggle_menu span {
 
 footer {
   height: 50vh;
-  background-color: #ff3b32;
+  background-color: #f3918c;
 }
 
 /* -------- End header Section --------*/
@@ -256,6 +256,7 @@ footer {
     flex-direction: row;
     -moz-column-gap: 50px;
          column-gap: 50px;
+    min-height: calc(100vh - 68px);
   }
 }
 .landing .intro-text {
