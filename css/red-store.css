@@ -273,7 +273,7 @@ footer {
 }
 .landing .img-holder {
   flex-basis: 50%;
-  width: 450px;
+  max-width: 450px;
 }
 @media (min-width: 992px) {
   .landing .img-holder {
