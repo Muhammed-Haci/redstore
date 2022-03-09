@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #1787e0;
+  background-color: #b62323;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -324,7 +324,7 @@ footer {
   width: 2px;
   height: 0;
   transition: 1s;
-  background-color: red;
+  background-color: #b62323;
 }
 .categories .container .img-holder::before {
   top: 0;
@@ -375,7 +375,8 @@ footer {
   top: 0;
   z-index: -1;
   transition: 0.5s;
-  background-color: #f51d00;
+  transition-delay: width 0.5s;
+  background-color: #563434;
 }
 .features figure figcaption {
   display: none;
@@ -407,7 +408,7 @@ footer {
   display: block;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 .features figure figcaption .stars .filled {
   color: #ffa700;
@@ -417,14 +418,11 @@ footer {
   font-size: 18px;
   color: #ff523b;
 }
-.features figure figcaption:hover::before {
-  width: 100%;
-}
 .features figure figcaption a {
   text-transform: capitalize;
   border: 1px solid #b62323;
   border-radius: 5px;
-  padding: 0 5px;
+  padding: 5px 10px;
   color: #fff;
   transition: 0.5s;
   background-color: #ff523b;
@@ -434,6 +432,9 @@ footer {
 }
 .features figure:hover figcaption {
   display: flex;
+}
+.features figure:hover figcaption::before {
+  width: 100%;
 }
 .features figure:hover a span::before {
   width: 100%;
