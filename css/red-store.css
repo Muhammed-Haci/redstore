@@ -249,7 +249,7 @@ footer span:last-of-type {
 /* -------- End header Section --------*/
 /* ------- Start Landing Section ------*/
 .landing {
-  height: calc(100vh - 61px);
+  height: 100vh;
   background: radial-gradient(#fff, #ffd6d6);
 }
 .landing .container {
