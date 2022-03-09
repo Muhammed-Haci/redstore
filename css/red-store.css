@@ -233,23 +233,15 @@ header .container nav .toggle_menu span {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  text-transform: capitalize;
-  color: #fff;
-  background-color: #2c4755;
-}
-footer span:last-of-type {
-  font-weight: bold;
-  color: #ff523b;
+  height: 50vh;
+  background-color: #ff3b32;
 }
 
 /* -------- End header Section --------*/
 /* ------- Start Landing Section ------*/
 .landing {
-  height: calc(100vh - 60px);
+  padding: 50px 0;
+  min-height: calc(100vh - 68px);
   background: radial-gradient(#fff, #ffd6d6);
 }
 .landing .container {
@@ -281,7 +273,12 @@ footer span:last-of-type {
 }
 .landing .img-holder {
   flex-basis: 50%;
-  max-width: 555px;
+  width: 450px;
+}
+@media (min-width: 992px) {
+  .landing .img-holder {
+    width: unset;
+  }
 }
 
 /* -------- End Landing Section -------*/
