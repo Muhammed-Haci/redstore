@@ -260,8 +260,116 @@ header .container nav .toggle_menu span {
 }
 
 footer {
-  height: 50vh;
-  background-color: #f3918c;
+  text-align: center;
+  background-color: black;
+  padding-top: 3.125rem;
+}
+@media (min-width: 768px) {
+  footer .container .col {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+  }
+  footer .container .links {
+    text-align: start;
+  }
+  footer .container .social {
+    text-align: start;
+  }
+}
+@media (min-width: 1200px) {
+  footer .container {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+footer .col:first-of-type .box h3 {
+  color: #fff;
+}
+footer .col:first-of-type .box p {
+  color: #777;
+  max-width: 400px;
+  margin: 15px auto;
+}
+footer .col:first-of-type .box > a {
+  width: 150px;
+  display: block;
+  margin: 10px auto;
+  color: #777;
+}
+@media (max-width: 767px) {
+  footer .links {
+    margin-bottom: 30px;
+  }
+}
+footer .links h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer .links a {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+  transition: 0.5s;
+}
+footer .links a:hover {
+  color: #fff;
+}
+footer .social h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+footer .social span {
+  display: block;
+}
+footer .social span a {
+  transition: 0.5s;
+  color: #777;
+}
+footer .social span a:hover {
+  color: #fff;
+}
+footer .social i {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+footer .social i:hover {
+  background-color: #1b1a1a;
+}
+footer .social .fb {
+  color: #003cff;
+}
+footer .social .tw {
+  color: #0f6aed;
+}
+footer .social .ins {
+  color: #f15315;
+}
+footer .social .yt {
+  color: #db0b0b;
+}
+footer .copyright {
+  border-top: 1px solid white;
+  margin: 20px auto 0;
+  padding: 10px 0;
+}
+footer .copyright p {
+  text-transform: capitalize;
+  color: #fff;
+}
+footer .copyright p span:first-of-type {
+  color: #ff523b;
+}
+footer .copyright p span:last-of-type {
+  color: #ff523b;
 }
 
 /* -------- End header Section --------*/
@@ -558,17 +666,17 @@ footer {
   color: #777;
 }
 /* --------- End special Section ------*/
-/* --------- start quote Section ------*/
-.quote {
+/* --------- start reviews Section ------*/
+.reviews {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
 }
-.quote .container {
+.reviews .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
-.quote .user {
+.reviews .user {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -578,34 +686,34 @@ footer {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-.quote .user > i {
+.reviews .user > i {
   font-size: 25px;
   color: #ff523b;
 }
-.quote .user p {
+.reviews .user p {
   margin: 20px 0;
   color: #777;
 }
-.quote .user .stars i {
+.reviews .user .stars i {
   margin-right: 4px;
 }
-.quote .user .stars .filled {
+.reviews .user .stars .filled {
   color: #ffd000;
 }
-.quote .user img {
+.reviews .user img {
   width: 100px;
   border-radius: 50%;
   margin-top: 20px;
 }
-.quote .user span {
+.reviews .user span {
   display: block;
 }
-.quote .user:hover {
+.reviews .user:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
   transform: translateY(-8px);
 }
 
-/* ---------- End quote Section -------*/
+/* ---------- End reviews Section -------*/
 /* ------- Start Footer section -------*/
 /* -------- End Footer section --------*/
 /* ---------- Start Animation ---------*/
