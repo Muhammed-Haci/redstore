@@ -53,25 +53,25 @@ toggle_menu.addEventListener("click", function(){
 
 // ------- nav active link function:
 
-// // --------- scroll to the top Function:
+// --------- scroll to the top Function:
 
-// let scrollUp = document.querySelector('.scroll-up');
+let scrollUp = document.querySelector('.scroll-up');
 
-// window.onscroll = function () {
-//     if (window.scrollY >= 600 ) {
-//       scrollUp.style.display = "block";
-//     }else {
-//       scrollUp.style.display = "none";
-//     }
-// };
+window.onscroll = function () {
+    if (window.scrollY >= 600 ) {
+      scrollUp.style.display = "block";
+    }else {
+      scrollUp.style.display = "none";
+    }
+};
 
-// scrollUp.onclick = function () {
-//   window.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: "smooth"
-//   })
-// };
+scrollUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+};
 
 
 

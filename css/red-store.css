@@ -153,6 +153,25 @@ a:active {
   width: 100%;
 }
 
+.scroll-up {
+  display: none;
+  position: fixed;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: #ff523b;
+}
+.scroll-up:hover {
+  background-color: #b62323;
+}
+
 .landing .intro-text a, .special .desc a {
   display: inline-block;
   padding: 8px 30px;
