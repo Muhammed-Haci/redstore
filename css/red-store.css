@@ -126,23 +126,31 @@ a:active {
 
 /* ---------- End Typography Rules -------------*/
 /* ---------- Start header Section -------------*/
-.features .main-title {
+.main-title {
   position: relative;
   font-size: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
   color: #555;
   margin: 0 auto 75px;
   text-transform: capitalize;
 }
-.features .main-title::after {
+.main-title::after {
   content: "";
   position: absolute;
   width: 35%;
   height: 4px;
   left: 50%;
   bottom: -5px;
+  transition: 0.5s;
+  border-radius: 5px;
   transform: translateX(-50%);
   background-color: #ff523b;
+}
+.main-title:hover::after {
+  width: 100%;
 }
 
 .landing .intro-text a {
@@ -315,7 +323,7 @@ footer {
   position: relative;
   transition: 1s;
   overflow: hidden;
-  box-shadow: 0 10px 10px #ddd;
+  box-shadow: 0 5px 5px #ddd;
   border-radius: 5px;
 }
 .categories .container .img-holder::before, .categories .container .img-holder::after {
@@ -337,6 +345,10 @@ footer {
 .categories .container .img-holder:hover::before, .categories .container .img-holder:hover::after {
   height: 100%;
 }
+.categories .container .img-holder:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px #ddd;
+}
 
 /* ------ End categories Section ------*/
 /* ------- Start Features section -----*/
@@ -346,7 +358,7 @@ footer {
 }
 .features .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 50px;
 }
 .features figure {
@@ -376,7 +388,7 @@ footer {
   z-index: -1;
   transition: 0.5s;
   transition-delay: width 0.5s;
-  background-color: #563434;
+  background-color: #b62323;
 }
 .features figure figcaption {
   display: none;
@@ -406,7 +418,7 @@ footer {
 }
 .features figure figcaption span:first-of-type {
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
@@ -441,6 +453,65 @@ footer {
 }
 
 /* -------- End Features section ------*/
+/* ------- Start Products section -----*/
+.products {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+.products .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+}
+.products figure {
+  border: 1px solid #b62323;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.products figure figcaption {
+  padding: 10px 0 0 10px;
+  transition: 0.5s;
+  background-color: #efa38bb5;
+}
+.products figure figcaption:hover {
+  background-color: #efa38b;
+}
+.products figure figcaption > span:first-of-type {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.products figure figcaption .stars .filled {
+  color: #ffa700;
+}
+.products figure figcaption .stars .empty {
+  color: #797979;
+}
+.products figure figcaption .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products figure figcaption .details span {
+  font-size: 18px;
+  color: #ff523b;
+}
+.products figure figcaption .details a {
+  text-transform: capitalize;
+  border-top: 1px solid #b62323;
+  border-left: 1px solid #b62323;
+  border-radius: 5px 0 0 0;
+  padding: 5px 10px;
+  color: #fff;
+  transition: 0.5s;
+  background-color: #ff523b;
+}
+.products figure figcaption .details a:hover {
+  background-color: #b62323;
+}
+
+/* -------- End Products section ------*/
 /* ------- Start Footer section -------*/
 /* -------- End Footer section --------*/
 /* ---------- Start Animation ---------*/
