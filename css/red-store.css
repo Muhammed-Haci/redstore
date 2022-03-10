@@ -153,17 +153,17 @@ a:active {
   width: 100%;
 }
 
-.landing .intro-text a {
+.landing .intro-text a, .special .desc a {
   display: inline-block;
   padding: 8px 30px;
-  margin: 30px 0;
+  margin-top: 30px;
   text-transform: capitalize;
   border-radius: 30px;
   color: #fff;
   transition: 0.5s;
   background-color: #ff523b;
 }
-.landing .intro-text a:hover, .landing .intro-text a:focus {
+.landing .intro-text a:hover, .special .desc a:hover, .landing .intro-text a:focus, .special .desc a:focus {
   background: #563434;
 }
 
@@ -267,7 +267,7 @@ footer {
 /* -------- End header Section --------*/
 /* ------- Start Landing Section ------*/
 .landing {
-  padding: 50px 0;
+  padding: 3.125rem 0;
   background: radial-gradient(#fff, #ffd6d6);
 }
 .landing .container {
@@ -395,7 +395,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap: 10px;
   position: absolute;
   text-align: center;
   height: 100%;
@@ -423,11 +422,13 @@ footer {
   color: #fff;
 }
 .features figure figcaption .stars .filled {
-  color: #ffa700;
+  color: #ffd000;
+  margin-right: 4px;
 }
 .features figure figcaption span:last-of-type {
   display: block;
   font-size: 18px;
+  margin-bottom: 10px;
   color: #ff523b;
 }
 .features figure figcaption a {
@@ -460,30 +461,39 @@ footer {
 }
 .products .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 50px;
 }
 .products figure {
-  border: 1px solid #b62323;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
+  box-shadow: 0 5px 5px #ddd;
+  transition: 0.5s;
+  border: 1px solid #b62323;
   border-radius: 5px;
+  background-color: #efa38bb5;
+}
+.products figure:hover {
+  background-color: #efa38b;
 }
 .products figure figcaption {
   padding: 10px 0 0 10px;
   transition: 0.5s;
-  background-color: #efa38bb5;
-}
-.products figure figcaption:hover {
-  background-color: #efa38b;
 }
 .products figure figcaption > span:first-of-type {
   display: block;
   font-size: 20px;
   font-weight: bold;
+  padding-right: 10px;
   color: black;
 }
+.products figure figcaption .stars i {
+  margin-right: 4px;
+}
 .products figure figcaption .stars .filled {
-  color: #ffa700;
+  color: #ffd000;
 }
 .products figure figcaption .stars .empty {
   color: #797979;
@@ -510,8 +520,92 @@ footer {
 .products figure figcaption .details a:hover {
   background-color: #b62323;
 }
+.products figure:hover {
+  box-shadow: 0px 15px 5px #ddd;
+}
 
 /* -------- End Products section ------*/
+/* -------- Start special Section -----*/
+.special {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+@media (min-width: 992px) {
+  .special .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.special .img-holder {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.special .desc {
+  text-align: center;
+  padding-top: 3.125rem;
+}
+.special .desc h2 {
+  font-size: 30px;
+}
+.special .desc h3 {
+  font-size: 20px;
+  color: #777;
+}
+.special .desc p {
+  max-width: 610px;
+  margin: 10px auto;
+  color: #777;
+}
+/* --------- End special Section ------*/
+/* --------- start quote Section ------*/
+.quote {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+.quote .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+.quote .user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.quote .user > i {
+  font-size: 25px;
+  color: #ff523b;
+}
+.quote .user p {
+  margin: 20px 0;
+  color: #777;
+}
+.quote .user .stars i {
+  margin-right: 4px;
+}
+.quote .user .stars .filled {
+  color: #ffd000;
+}
+.quote .user img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.quote .user span {
+  display: block;
+}
+.quote .user:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+/* ---------- End quote Section -------*/
 /* ------- Start Footer section -------*/
 /* -------- End Footer section --------*/
 /* ---------- Start Animation ---------*/
