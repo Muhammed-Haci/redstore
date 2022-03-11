@@ -209,11 +209,14 @@ header .container nav {
        column-gap: 15px;
 }
 header .container nav ul {
-  display: none;
+  display: block;
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100% + 40px);
+  opacity: 0;
+  z-index: -5;
   left: 0;
   width: 100%;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   header .container nav ul {
