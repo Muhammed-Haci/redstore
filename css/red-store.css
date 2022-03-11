@@ -222,6 +222,8 @@ header .container nav ul {
   header .container nav ul {
     display: flex !important;
     position: relative;
+    opacity: 1 !important;
+    z-index: 5 !important;
   }
 }
 header .container nav ul li {
@@ -749,4 +751,43 @@ footer .copyright p span:last-of-type {
 /* -------- End Footer section --------*/
 /* ---------- Start Animation ---------*/
 /* ----------- End Animation ----------*/
+/* -------- Start Sorting Section --------*/
+.sort .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sort .container h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* --------- End Sorting Section ---------*/
+/* ------- Start pagination Section ------*/
+.pagination {
+  margin-bottom: 20px;
+}
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pagination ul li {
+  margin: 5px;
+}
+.pagination ul li a {
+  display: block;
+  padding: 3px 10px;
+  color: #ff523b;
+  transition: 0.5s;
+  border: 2px solid #ff523b;
+  border-radius: 5px;
+}
+.pagination ul li a:hover {
+  color: #fff;
+  background-color: #ff523b;
+}
+
+/* -------- End pagination Section -------*/
 /*# sourceMappingURL=red-store.css.map */

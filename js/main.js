@@ -11,7 +11,7 @@ let open = false;
 
 toggle_menu.addEventListener("click", function(){
   if (open === true) {
-    nav.style.cssText = `top: calc(100% + 40px); opacity: 0; z-index: -5 `;
+    nav.style.cssText = `top: calc(100% + 40px);`;
     line1.style.cssText = `transform: rotate(0deg) translate(0px)`;
     line2.style.cssText = `transform: translateX(0px); opacity: 1`;
     line3.style.cssText = `transform: rotate(0deg) translate(0px)`;
