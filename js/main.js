@@ -17,7 +17,7 @@ toggle_menu.addEventListener("click", function(){
     line3.style.cssText = `transform: rotate(0deg) translate(0px)`;
     open = false;
   } else {
-    nav.style.cssText = "top: calc(100% + 2px); opacity: 1; z-index: 5";
+    nav.style.cssText = "top: calc(100% + 1px); opacity: 1; z-index: 5";
     line1.style.cssText = `transform: rotate(45deg) translate(6px, 5px); background-color: red; `;
     line2.style.cssText = `transform: translateX(-15px); opacity: 0`;
     line3.style.cssText = `transform: rotate(-45deg) translate(6px, -5px); background-color: red; `;
